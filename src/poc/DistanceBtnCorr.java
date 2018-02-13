@@ -25,7 +25,7 @@ public class DistanceBtnCorr {
         double distance = 6371 * c * 1000; // convert to meters
         System.out.println("Org Dist: " + distance);
         
-        distance = Math.pow(distance, 2) /* + Math.pow(height, 2)*/;
+        distance = Math.pow(distance, 2) /* + MyMath.pow(height, 2)*/;
 
         return Math.sqrt(distance);
     }
