@@ -1,0 +1,3 @@
+Max is: 20
+Max is: 50
+Max is: 30
