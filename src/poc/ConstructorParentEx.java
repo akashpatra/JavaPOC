@@ -5,7 +5,7 @@ package poc;
  */
 public class ConstructorParentEx {
 
-    public static ConstructorParentEx() {
+    public ConstructorParentEx() {
         System.out.println("In Parent Constructor");
     }
 
