@@ -1,4 +1,4 @@
-package hackerrank.linkedlist;
+package hackerrank.datastructures.linkedlist;
 
 /**
  * @author Akash Patra
