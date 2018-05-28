@@ -2,9 +2,11 @@ package java8.funcprog;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.Predicate;
 
 /**
  * Example on Dependency Injection. Take the values and total them.
+ * Dependency Injection is a strategy pattern.
  *
  * @author Akash Patra
  */
@@ -13,7 +15,7 @@ public class DependencyInjection {
     interface Selector {
         boolean pick(int value);
     }
-    
+
     /**
      * Strategy Pattern using interfaces
      *
@@ -21,7 +23,7 @@ public class DependencyInjection {
      * @param selector
      * @return
      */
-    public static int totalValues(List<Integer> values, Selector selector) {
+   /* public static int totalValues(List<Integer> values, Selector selector) {
         int result = 0;
         for (Integer e : values) {
             if (selector.pick(e)) {
@@ -29,6 +31,36 @@ public class DependencyInjection {
             }
         }
         return result;
+    }*/
+
+    /**
+     * Strategy Pattern using Predicates
+     *
+     * @param values
+     * @param selector
+     * @return
+     */
+    /*public static int totalValues(List<Integer> values, Predicate<Integer> selector) {
+        int result = 0;
+        for (Integer e : values) {
+            if (selector.test(e)) {
+                result += e;
+            }
+        }
+        return result;
+    }*/
+
+    /**
+     * Strategy Pattern using Lambdas
+     *
+     * @param values
+     * @param selector
+     * @return
+     */
+    public static int totalValues(List<Integer> values, Predicate<Integer> selector) {
+        return values.stream()
+                .filter(selector)
+                .reduce(0, Math::addExact);
     }
 
     public static void main(String[] args) {
