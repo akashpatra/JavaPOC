@@ -4,6 +4,8 @@ import java.util.function.Predicate;
 import java.util.stream.IntStream;
 
 /**
+ * Difference between Imperative & Declarative.
+ *
  * @author Akash Patra
  */
 public class Prime {
@@ -30,6 +32,6 @@ public class Prime {
 
         return number > 1 &&
                 IntStream.range(2, number)
-                .noneMatch(index -> number % index == 0);
+                        .noneMatch(index -> number % index == 0);
     }
 }

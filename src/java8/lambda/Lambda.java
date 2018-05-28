@@ -18,5 +18,6 @@ public class Lambda {
     private static void executeAdd() {
         IAdd iAdd = (int a, int b) -> (a + b);
         System.out.println(iAdd.add(2, 4));
+//        String.valueOf()
     }
 }
