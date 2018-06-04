@@ -30,7 +30,12 @@ public class MapperExample {
 
         System.out.println("\nFunctional Style");
 
-        // TODO: Find a way to Print the object
+        names.stream()
+                .filter(MapperExample::isNotSam)
+                .map(User::new)
+                .forEach(System.out::println);
+
+        // TODO: Find a way to Print the object in this only
         List<User> users = names.stream()
                 .filter(MapperExample::isNotSam)
                 .map(User::new)
