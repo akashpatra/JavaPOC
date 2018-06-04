@@ -1,4 +1,4 @@
-package java8.lambda;
+package funprog.akash.lambda;
 
 /**
  * @author Akash Patra

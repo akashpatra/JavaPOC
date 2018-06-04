@@ -1,4 +1,4 @@
-package java8.funcprog;
+package funprog.venkat.jetbrains;
 
 import java.util.Arrays;
 import java.util.List;

@@ -1,4 +1,4 @@
-package java8.methodreferences;
+package funprog.akash.methodreferences;
 
 /**
  * @author Akash Patra

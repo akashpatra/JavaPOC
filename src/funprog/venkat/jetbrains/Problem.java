@@ -1,4 +1,4 @@
-package java8.funcprog;
+package funprog.venkat.jetbrains;
 
 import java.util.Arrays;
 import java.util.List;
@@ -51,9 +51,9 @@ public class Problem {
                 values.stream()
 //                        .filter(e -> e > 3)
 //                        .filter(e -> isGreaterThan3(e))
-//                        .filter(Problem::isGreaterThan3) // Using Method References, it is more expressive.
+                        .filter(Problem::isGreaterThan3) // Using Method References, it is more expressive.
 //                        .filter(isGreaterThan3) // Using Predicates.
-                        .filter(isGreaterThan.apply(3)) // Using Generic Function.
+//                        .filter(isGreaterThan.apply(3)) // Using Generic Function.
 //                        .filter(e -> e % 2 == 0)
                         .filter(Problem::isEven)
                         .map(Problem::doubleIt)

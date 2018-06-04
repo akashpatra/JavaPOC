@@ -1,4 +1,4 @@
-package java8.funcprog;
+package funprog.venkat.jetbrains;
 
 import java.util.function.Predicate;
 import java.util.stream.IntStream;
