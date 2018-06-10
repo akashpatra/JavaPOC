@@ -4,7 +4,10 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * Print all names except Sam using @link{filter} and @link{forEach}
+ * Filter and ForEach Example.
+ * <p>
+ * <b>Problem Statement:</b>
+ * Print all names except "SAM".
  *
  * @author Akash Patra
  */

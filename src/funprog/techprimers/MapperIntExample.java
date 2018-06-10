@@ -3,11 +3,14 @@ package funprog.techprimers;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.function.ToIntFunction;
 import java.util.stream.Collectors;
 
 /**
- * MapToInt and sum Example
+ * MapToInt and Sum Example.
+ * <p>
+ * <b>Problem Statement:</b>
+ * There is a list of names. Create a list of objects, from the list of names except "SAM".
+ * Then add the ages from the new created list of objects.
  *
  * @author Akash Patra
  */
@@ -45,12 +48,7 @@ public class MapperIntExample {
                 .collect(Collectors.toList());
 
         int sum = users.stream()
-                .mapToInt(new ToIntFunction<User>() {
-                    @Override
-                    public int applyAsInt(User user) {
-                        return user.getAge();
-                    }
-                })
+                .mapToInt(User::getAge)
                 .sum();
 
         System.out.println("Sum of Ages: " + sum);

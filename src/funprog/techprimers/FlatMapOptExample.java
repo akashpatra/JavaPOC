@@ -5,7 +5,11 @@ import java.util.List;
 import java.util.Optional;
 
 /**
- * FlatMap and Optional Example
+ * FlatMap and Optional Example.
+ * <p>
+ * <b>Problem Statement:</b>
+ * There is a List of Users, with each User containing list of numbers.
+ * Need to find number 5.
  *
  * @author Akash Patra
  */

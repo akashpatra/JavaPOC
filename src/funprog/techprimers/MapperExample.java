@@ -6,7 +6,10 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 /**
- * Fetching data in streams, converting to another object and storing in a collection.
+ * Map and Collect Example.
+ * <p>
+ * <b>Problem Statement:</b>
+ * There is a list of names. Create a list of objects, from the list of names except "SAM".
  *
  * @author Akash Patra
  */
