@@ -1,4 +1,4 @@
-package javaex.interfaces.java7;
+package interfaces;
 
 /**
  * @author Akash Patra
@@ -13,5 +13,6 @@ public class CustomClass implements CustomerInterface {
     public static void main(String[] args) {
         CustomerInterface instance = new CustomClass();
         instance.method();
+//        instance.method2();
     }
 }
