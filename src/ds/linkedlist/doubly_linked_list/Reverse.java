@@ -1,4 +1,4 @@
-package data_structures.linkedlist.doubly_linked_list;
+package ds.linkedlist.doubly_linked_list;
 
 /**
  * Reverse Double Linked List
