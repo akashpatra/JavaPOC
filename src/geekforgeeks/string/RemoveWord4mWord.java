@@ -2,7 +2,7 @@ package geekforgeeks.string;
 
 /**
  * Remove all characters of a Word from another Word and count how many such moves can be done.
- *
+ * 
  * @author Akash Patra
  */
 public class RemoveWord4mWord {
