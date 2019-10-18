@@ -54,9 +54,11 @@ public class Problem {
                         .filter(Problem::isGreaterThan3) // Using Method References, it is more expressive.
 //                        .filter(isGreaterThan3) // Using Predicates.
 //                        .filter(isGreaterThan.apply(3)) // Using Generic Function.
-//                        .filter(e -> e % 2 == 0)
-                        .filter(Problem::isEven)
-                        .map(Problem::doubleIt)
-                        .findFirst());
+                        .filter(e -> e % 2 == 0)
+//                        .filter(Problem::isEven)
+                        .map(e -> e * 2)
+//                        .map(Problem::doubleIt)
+                        .findFirst()
+                        .get());
     }
 }
