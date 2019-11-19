@@ -1,5 +1,7 @@
 package poc;
 
+import java.util.HashMap;
+
 public class StringChecks {
 
 	// Check Spaces
