@@ -1,10 +1,14 @@
-package corejava.algo;
+package algo;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 /**
+ * Find Max Non-Negative Sub-Array. Find it using sum which is Max.
+ * <p>
+ * FROM: InterviewBit
+ *
  * @author Akash Patra
  */
 public class MaxNonNegativeArray {
@@ -34,14 +38,9 @@ public class MaxNonNegativeArray {
         }
 
         // If all Elements are non-negative
-        if (s == 0 && d == length-1) {
+        if (s == 0 && d == length - 1) {
             subArrList.add(new Index(s, d));
         }
-//
-//        // If last element is non-negative
-//        if (s == length - 1 && d == length -1) {
-//            subArrList.add(new Index(s, d));
-//        }
 
         if (!reset && A.get(d) > 0) {
             subArrList.add(new Index(s, d));
