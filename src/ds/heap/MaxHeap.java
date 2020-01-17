@@ -2,10 +2,21 @@ package ds.heap;
 
 /**
  * Max Heap
+ * <p>
  * FROM: GeeksForGeeks
  * <p>
  * Taking size of the array extra one and ignoring the 0th Element.
  * Easy to work on the logic's.
+ * <p>
+ * 1. Insert: Add element to the array and then check if it is larger than its parent. Then swap till all the parents
+ * are greater than the child.
+ * Time Complexity: n * O(logn) = O(nlogn)
+ * <p>
+ * 2. Remove Max Element: Place the last element as Root and heapify from root till all the parent are greater than
+ * the child.
+ * Time Complexity: n * O(logn) = O(nlogn)
+ * <p>
+ * Total Time Complexity: O(2nlogn) ~ O(nlogn)
  *
  * @author Akash Patra
  */
@@ -82,11 +93,11 @@ public class MaxHeap {
         MaxHeap maxHeap = new MaxHeap(15);
 
         maxHeap.insert(4);
-        maxHeap.print();
+//        maxHeap.print();
         maxHeap.insert(9);
-        maxHeap.print();
+//        maxHeap.print();
         maxHeap.insert(3);
-        maxHeap.print();
+//        maxHeap.print();
         maxHeap.insert(12);
         maxHeap.print();
     }
