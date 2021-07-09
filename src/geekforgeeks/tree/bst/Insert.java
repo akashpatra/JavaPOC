@@ -1,7 +1,7 @@
 package geekforgeeks.tree.bst;
 
-import geekforgeeks.tree.InorderTraversal;
-import geekforgeeks.tree.Node;
+import ds.tree.traversal.InorderTraversal;
+import ds.tree.Node;
 
 /**
  * Insertion into BST, using RECURSION

@@ -1,5 +1,7 @@
 package geekforgeeks.tree;
 
+import ds.tree.Node;
+
 /**
  * @author Akash Patra
  */

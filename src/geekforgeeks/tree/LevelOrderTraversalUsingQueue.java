@@ -1,5 +1,7 @@
 package geekforgeeks.tree;
 
+import ds.tree.Node;
+
 import java.util.LinkedList;
 import java.util.Queue;
 

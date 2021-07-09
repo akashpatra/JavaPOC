@@ -1,6 +1,6 @@
 package geekforgeeks.tree.bst;
 
-import geekforgeeks.tree.Node;
+import ds.tree.Node;
 
 /**
  * Search an element in BST

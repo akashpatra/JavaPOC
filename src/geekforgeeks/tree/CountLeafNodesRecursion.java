@@ -1,5 +1,7 @@
 package geekforgeeks.tree;
 
+import ds.tree.Node;
+
 /**
  * Total Leaf nodes using Recursion
  *

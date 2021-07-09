@@ -1,5 +1,7 @@
 package geekforgeeks.tree;
 
+import ds.tree.Node;
+
 /**
  * Sum of Parent Nodes of Element X using Recursion
  *
